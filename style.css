@@ -10,3 +10,8 @@
 /* .nav-tabs .nav-item{
     width:50% ;
 } */
+
+#bgimage{
+    width: 100%;
+    background-size: 100% 100%;
+}
