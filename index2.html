@@ -33,15 +33,15 @@
 	<body>
 		<div id="wrapper">
 					<!-- HEADER -->
-					<header id="header" class=" container position-relative shadow-xs">
-						<div class=" row-pill position-absolute bg-white rounded left-0 right-0 shadow-xlg">
+					<header id="header" class="container position-relative shadow-xs">
+						<div class="ml--15 mr--15 pl--15 pr--15 mt-3 row-pill position-absolute bg-white rounded left-0 right-0 shadow-xlg">
 
-							<!-- NAVBAR ---->
+ 							<!-- NAVBAR ---->
 							<div class=" position-relative">
 			
 								<nav class="navbar navbar-expand-lg navbar-light justify-content-lg-between justify-content-md-inherit">
 			
-									<div class=" align-items-start">
+									<div class="align-items-start">
 			
 										<!-- mobile menu button : show -->
 										<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMainNav" aria-controls="navbarMainNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,9 +61,6 @@
 										<a class="navbar-brand pl-2" href="index.html">
 											<img src="assets/images/logo/logo_dark.svg" width="90" height="70" alt="...">
 										</a>
-											<!-- mobile menu button : show -->
-										
-									
 			
 									</div>
 			
@@ -89,7 +86,7 @@
 												Logo : height: 70px max
 											-->
 											<a class="navbar-brand" href="index.html">
-												<img src="assets/images/logo/logo_dark.svg" width="90" height="70" alt="...">
+												<img src="assets/images/logo/logo_dark.svg" width="110" height="70" alt="...">
 											</a>
 										
 											
@@ -184,22 +181,19 @@
 			
 			
 									</div>
-			
-			
-			
-								<!-- <div class="collapse navbar-collapse float-end navbar-animate-fadein  "> -->
-									<ul class="list-inline list-unstyled mb-0  d-flex align-items-end" id="asdf">
+								
+									<ul class=" list-unstyled mb-0  d-flex align-items-end " id="asdf">
 			
 										<li class="nav-item dropdown">
 								
-												<a class="nav-link dropdown-toggle btn btn-sm btn-pill btn-primary text-white" type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false"  id="loginorRegisterFeatures" >
-													<span class="group-icon ">
-														<i class="fi fi-exit pb-1 fs--15"></i>SignIn/SignUp
+												<a class="nav-link dropdown-toggle btn btn-sm btn-pill btn-primary  d-none d-lg-inline-block d-md-inline-block " type="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false"  id="loginorRegisterFeatures" >
+													<span class="group-icon">
+														<i class="fi fi-exit mr-2 pb-1 fs--15"></i>SignIn/SignUp
 
 													</span> 	
 												</a>
 			
-												<ul class="dropdown-menu dropdown-menu-clean" aria-labelledby="loginorRegisterFeatures" >
+												<ul class="dropdown-menu dropdown-menu-invert  dropdown-menu-clean" aria-labelledby="loginorRegisterFeatures" >
 			
 													<li class="dropdown-item">
 														<a class="dropdown-link js-ajax-modal" href="#"	data-href="_ajax/modal_signin_md.html"
@@ -236,44 +230,70 @@
 			
 										
 											
-											
-			
-											<!-- ALREADY SIGNED IN -->
-											<!--
-											<a href="#" aria-label="Account Options" id="dropdownAccountOptions" class="btn btn-sm btn-primary btn-pill" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
-												<span class="group-icon">
-													<i class="fi fi-user-male"></i>
-													<i class="fi fi-close"></i>
-												</span> 
-												<span>Account</span>
-											</a>
-			
-											<div aria-labelledby="dropdownAccountOptions" class="prefix-link-icon prefix-icon-dot dropdown-menu dropdown-menu-clean dropdown-menu-invert dropdown-click-ignore p-0 mt--18 fs--15">
-												<div class="dropdown-header">
-													John Doe
-												</div>
-												<div class="dropdown-divider"></div>
-												<a href="account-orders.html" title="My Orders" class="dropdown-item text-truncate font-weight-light">
-													My Orders <small>(2)</small>
-												</a>
-												<a href="account-favourites.html" title="My Favourites" class="dropdown-item text-truncate font-weight-light">
-													My Favourites <small>(3)</small>
-												</a>
-												<a href="account-settings.html" title="Account Settings" class="dropdown-item text-truncate font-weight-light">
-													Account Settings
-												</a>
-												<div class="dropdown-divider mb-0"></div>
-												<a href="#!" title="Log Out" class="prefix-icon-ignore dropdown-footer dropdown-custom-ignore">
-													<i class="fi fi-power float-start"></i>
-													Log Out
-												</a>
-											</div>
-											-->
 			
 										</li>
 			
 									</ul>
-								<!-- </div> -->
+
+									<!-- OPTIONS -->
+									<ul class=" d-none d-sm-none list-unstyled mb-0 d-flex justify-content-end mr-0">
+
+										<li class=" mx-1 dropdown">
+
+											<a href="#" aria-label="Account Options" id="dropdownAccountOptions" class="btn btn-sm rounded-circle btn-primary btn-soft-static shadow-none" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+												<span class="group-icon">
+													<i class="fi fi-user-male"></i>
+													<i class="fi fi-close"></i>
+												</span>
+											</a>
+
+
+							
+											<div aria-labelledby="dropdownAccountOptions" class="prefix-link-icon prefix-icon-dot dropdown-menu dropdown-menu-clean dropdown-menu-invert dropdown-click-ignore p-0 mt--18 fs--15">
+											
+												
+												
+												<a class="dropdown-link js-ajax-modal dropdown-item text-truncate font-weight-light" href="#"	data-href="_ajax/modal_signin_md.html"
+												data-ajax-modal-size="modal-md"
+												data-ajax-modal-centered="true"
+												data-ajax-modal-backdrop="static">
+												Login As Trainer</a>
+												<a class="dropdown-link js-ajax-modal dropdown-item text-truncate font-weight-light" href="#"	data-href="_ajax/modal_signin_md.html"
+												data-ajax-modal-size="modal-md"
+												data-ajax-modal-centered="true"
+												data-ajax-modal-backdrop="static">
+												Login </a>
+												<a class="dropdown-link js-ajax-modal dropdown-item text-truncate font-weight-light" href="#"	data-href="_ajax/modal_signin_md.html"
+												data-ajax-modal-size="modal-md"
+												data-ajax-modal-centered="true"
+												data-ajax-modal-backdrop="static">
+												Register As Trainer</a>
+												<a class="dropdown-link js-ajax-modal dropdown-item text-truncate font-weight-light" href="#"	data-href="_ajax/modal_signin_md.html"
+												data-ajax-modal-size="modal-md"
+												data-ajax-modal-centered="true"
+												data-ajax-modal-backdrop="static">
+												Register</a>
+											
+												<!-- <div class="dropdown-divider mb-0"></div>
+												<a href="#!" title="Log Out" class="prefix-icon-ignore dropdown-footer dropdown-custom-ignore">
+													<i class="fi fi-power float-start"></i>
+													Signout
+												</a> -->
+											</div>
+
+										</li>
+
+
+									</ul>
+									<!-- /OPTIONS -->
+								
+			
+			
+			
+								
+									
+
+									
 									
 
 									
@@ -299,7 +319,7 @@
 		
 		
 					<!-- COVER + SEARCH -->
-					<section class="bg-theme-color-light overlay-dark overlay-opacity-8  lazy" id="bgimage"
+					<section class="bg-theme-color-light overlay-dark overlay-opacity-8 lazy" id="bgimage"
 						 data-background-image="jobportallandingpage.jpg">
 						
 						<div class="container"> 
@@ -327,7 +347,7 @@
 		
 								<div class="col-12 col-lg-6  order-md-2 order-lg-2 text-align-end align-items-start text-center-md text-center-xs" data-aos="fade-in" data-aos-delay="50" data-aos-offset="0">
 		
-									<div class="d-inline-block bg-white shadow-primary-xs rounded p--20 mt--30 p-4-xs w-90 max-w-450 text-align-start">
+									<div class="d-inline-block bg-white shadow-primary-xs rounded p--30 mt--30 p-4-xs w-70 max-w-450 text-align-start">
 								
 										<h2 class="h5 mb-5 	text-center">
 											
@@ -344,7 +364,7 @@
 											 </div>
 											 <div class="form-label-group mb-3">
 												<input required id="search_for_jobortrainer" type="text" class="form-control" placeholder="Search for job or trainer">
-												<label for="search_for_jobortrainer">Location</label>
+												<label for="search_for_jobortrainer"><i class="fi fi-pin"></i>Location</label>
 											 </div>
 											 <div class="clearfix mb-4">
 												<label class="form-radio form-radio-primary">
@@ -409,19 +429,18 @@
 
 						<!-- Forum / Comunity -->
 					<section class="bg-light">
-						<div class="container ">
+						<div class="container">
 
 							<div class="row">
 
-								<div class="mb-4 order-lg-1 col-12 col-lg-7">
+								<div class="mb-4 order-lg-1 col-12 col-lg-8">
 
-									<div class="bg-white p-4 rounded ">
+									<div class="bg-white  p-4 rounded">
 
-										<h2 class="h2 mb-3 text-primary font-weight-normal text-dark ">
+										<h2 class="h2 mb-3 text-dark font-weight-normal">
 											Training Requirements
 										</h2>
 										<li class="dropdown-divider"></li>
-									
 
 
 										<!-- item -->
@@ -443,24 +462,11 @@
 											</div>
 
 											<ul class="list-inline mt-2 text-muted fs--14">
-												
+												<li class="list-inline-item">
+													<i class="fi fi-chat float-start"></i> 26 posts 
+												</li>
 												<li class="list-inline-item">
 													<i class="fi fi-time float-start"></i> 29 June 2020 16:41
-												</li>
-												<li class="list-inline-item">
-													Virtual
-													 
-												</li>
-												<li class="list-inline-item">
-													Rs.50,000/month
-
-
-													 
-												</li>
-												<li class="list-inline-item">
-													<a href="#" class=" rounded">CTS</a>
-													
-													 
 												</li>
 											</ul>
 										</div>
@@ -487,31 +493,12 @@
 											</div>
 
 											<ul class="list-inline mt-2 text-muted fs--14">
-												
 												<li class="list-inline-item">
-													<i class="fi fi-time float-start"></i> 29 June 2020 16:41
+													<i class="fi fi-chat float-start"></i> 26 posts 
 												</li>
-										
-										
 												<li class="list-inline-item">
-													On-Shore
-													 
+													<i class="fi fi-time float-start"></i> 29 June 2020 16:41 
 												</li>
-										
-										
-												<li class="list-inline-item">
-													Rs.10,000/day
-
-
-													 
-												</li>
-										
-												<li class="list-inline-item">
-													<a href="#" class=" rounded">Wipro</a>
-													
-													 
-												</li>
-										
 											</ul>
 										</div>
 										<!-- /item -->
@@ -535,54 +522,29 @@
 
 											<ul class="list-inline mt-2 text-muted fs--14">
 												<li class="list-inline-item">
-													<i class="fi fi-time float-start"></i> 29 June 2020 16:41
+													<i class="fi fi-chat float-start"></i> 26 posts 
 												</li>
 												<li class="list-inline-item">
-													OnShore
-													 
-												</li>
-												<li class="list-inline-item">
-													Rs.10,000/day
-
-
-													 
-												</li>
-												<li class="list-inline-item">
-													<a href="#" class=" rounded">TCS</a>
-													
-													 
+													<i class="fi fi-time float-start"></i> 29 June 2020 16:41 
 												</li>
 											</ul>
 										</div>
 										<!-- /item -->
 										<div class="text-align-end">
-											<a href="niche.classifieds-category.html" class="btn btn-block  btn-primary">
-												<span>Show more</span>
+											<a href="niche.classifieds-category.html" class="btn btn-block btn-primary btn-sm">
+												<span>Show More</span>
 												<i class="fi fi-arrow-end"></i>
 											</a>
 										</div>
-										
-
-
-								
-
-
-
-
-
-											
-
 									</div>
 
 								</div>
 
-								<div class=" order-lg-2 col-12 col-lg-5 mb-4">
-									<div class="bg-white  p-4 rounded ">
-										<h2 class="h2 mb-3 d-inline-block text-primary font-weight-normal text-dark">
+								<div class=" order-lg-2 col-12 col-lg-4">
+									<div class="bg-white p-4 rounded">
+										<h2 class="h2 mb-3 text-dark font-weight-normal">
 										 Trainers available
 										</h2>
-									
-										<li class="dropdown-divider"></li>
 									
 										<a href="niche.classifieds-item.html"
 											class="d-flex p-2 mb-3 shadow-xs shadow-md-hover rounded text-decoration-none transition-hover-top transition-all-ease-250">
@@ -595,9 +557,9 @@
 											<div class="col px-3">
 									
 												<p class="fs--18 pt-2 mb-2 font-weight-medium text-dark">
-													Java trainer
+													2019 New original shoes, never weared
 													<span class="d-block mt-2 text-dark font-weight-light fs--18">
-														Expected Salary	10 LPA
+														$159.99
 													</span>
 												</p>
 									
@@ -617,9 +579,9 @@
 											<div class="col px-3">
 									
 												<p class="fs--18 pt-2 mb-2 font-weight-medium text-dark">
-													DotNet trainer
+													Brand new phone, no scratches
 													<span class="d-block mt-2 text-dark font-weight-light fs--18">
-														Expected Salary	15 LPA
+														$159.99
 													</span>
 												</p>
 									
@@ -639,9 +601,9 @@
 											<div class="col px-3">
 									
 												<p class="fs--18 pt-2 mb-2 font-weight-medium text-dark">
-													Node.js trainer
+													I sell my old laptop, to buy a new one
 													<span class="d-block mt-2 text-dark font-weight-light fs--18">
-														Expected Salary	15 LPA
+														$159.99
 													</span>
 												</p>
 									
@@ -659,9 +621,9 @@
 											<div class="col px-3">
 									
 												<p class="fs--18 pt-2 mb-2 font-weight-medium text-dark">
-													Python trainer
+													I sell my old laptop, to buy a new one
 													<span class="d-block mt-2 text-dark font-weight-light fs--18">
-														Expected Salary	11 LPA
+														$159.99
 													</span>
 												</p>
 									
@@ -671,8 +633,8 @@
 									
 									
 										<div class="text-align-end">
-											<a href="niche.classifieds-category.html" class="btn btn-block  btn-primary">
-												<span>Show more</span>
+											<a href="niche.classifieds-category.html" class="btn btn-block btn-primary btn-sm">
+												<span>Show More</span>
 												<i class="fi fi-arrow-end"></i>
 											</a>
 										</div>
